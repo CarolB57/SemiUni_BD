@@ -76,11 +76,10 @@ CREATE TABLE Certificado(
 );
 
 CREATE TABLE Feedback(
-    Codigo INTEGER,
+    Codigo INTEGER PRIMARY KEY,
     Cod_Inscricao INTEGER,
 	Nota INTEGER CHECK (Nota BETWEEN 1 AND 10),
 	Comentario TEXT,
-	PRIMARY KEY (Codigo, Cod_Inscricao),
 	FOREIGN KEY (Cod_Inscricao) REFERENCES Inscricao(Codigo)
 );
 
