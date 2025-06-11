@@ -56,6 +56,14 @@ CREATE TABLE Atividade(
     FOREIGN KEY (Cod_Local) REFERENCES LocalAtividade(Codigo)
 );
 
+CREATE TABLE Participante_Atividade(
+    Cod_Atividade INTEGER,
+	CPF_Participante VARCHAR(11),
+	PRIMARY KEY (CPF_participante, Cod_Atividade),
+	FOREIGN KEY (Cod_Atividade) REFERENCES Atividade(Codigo),
+    FOREIGN KEY (CPF_Participante) REFERENCES Participante(CPF)
+);
+
 CREATE TABLE Inscricao(
     Codigo INTEGER PRIMARY KEY,
     Cod_Atividade INTEGER,
