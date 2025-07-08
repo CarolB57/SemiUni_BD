@@ -1,3 +1,15 @@
+/*
+
+
+Aluna: Caroline Bohadana Rodrigues Viana
+Matrícula: 232050975
+
+Trabalho Final de Banco de Dados
+
+
+*/
+
+
 -- Database: SemiUni
 
 -- DROP DATABASE IF EXISTS "SemiUni";
